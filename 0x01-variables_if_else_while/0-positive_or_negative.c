@@ -6,7 +6,7 @@
 /* betty style doc for function main goes there */
 /**
 * main - Determine the number is positive or else
-* 
+*
 * Return: Always 0
 */
 int main(void)
@@ -18,13 +18,13 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 	{
-	printf("%d  is positive\n", n);
+	printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
 	printf("%d is zero\n", n);
 	}
-	else 
+	else
 	{
 	printf("%d is negative\n", n);
 	}
