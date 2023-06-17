@@ -13,7 +13,7 @@ char lett = 'z';
 while (lett >= 'a')
 {
 putchar(lett);
-lett-- ;
+lett--;
 }
 putchar('\n');
 return (0);
