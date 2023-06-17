@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-* main - print a three combination 
+* main - print a three combination
 *
 * Return: Always 0
 */
@@ -21,7 +21,7 @@ putchar(j);
 putchar(z);
 if (i == 55 && j == 56 && z == 57)
 {
-break ;
+break;
 }
 putchar(',');
 putchar(' ');
