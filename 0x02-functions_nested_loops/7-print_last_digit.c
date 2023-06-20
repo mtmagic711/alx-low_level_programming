@@ -15,6 +15,6 @@ if (n < 0)
 	lst *= -1;
 }
 	 lst *= n % 10;
-	_putchar(lst);
+	_putchar(lst + '0');
 	return (lst);
 }
