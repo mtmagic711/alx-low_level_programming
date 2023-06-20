@@ -2,10 +2,10 @@
 
 /**
 * print_sign - determin the sign of an integer.
-* @c: the entry.
+* @n: the entry.
 * Return: -1 or 1, in case of 0.
 */
- int print_sign(int n)
+int print_sign(int n)
 {
 if (n > 0)
 {
