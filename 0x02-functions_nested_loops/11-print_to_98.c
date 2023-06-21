@@ -13,16 +13,16 @@ int a = n;
 
 while (a != 98)
 	{
-	if (a < 98)
-		{
-			printf("%d, ", a);
-			a++;
-		}
-	else if (a > 98)
-		{
-			printf("%d, ", a);
-			a--;
-		}
-	}
-	printf("%d\n", a);
+if (a < 98)
+{
+printf("%d, ", a);
+a++;
+}
+else if (a > 98)
+{
+printf("%d, ", a);
+a--;
+}
+}
+printf("%d\n", a);
 }
