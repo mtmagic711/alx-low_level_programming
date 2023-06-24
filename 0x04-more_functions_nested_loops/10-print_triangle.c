@@ -12,6 +12,8 @@ int i, j, l;
 
 j = 1;
 l = 0;
+if (size > 0)
+{
 for (i = 0; i < size; i++)
 {
 	j = l;
@@ -28,5 +30,10 @@ for (i = 0; i < size; i++)
 		}
 	l++;
 	_putchar('\n');
+}
+}
+else
+{
+_putchar('\n');
 }
 }
