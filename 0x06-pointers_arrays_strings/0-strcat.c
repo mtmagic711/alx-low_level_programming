@@ -16,7 +16,8 @@ while (*(dest + i) != '\0')
 {
 	i++;
 }
-i++;
+
+*(dest + i) = ' ';
 while (*(src + j))
 {
 	*(dest + i) = *(src + j);
