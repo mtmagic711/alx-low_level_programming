@@ -9,6 +9,10 @@
 
 char *_strstr(char *haystack, char *needle)
 {
+int i, j;
+
+i = 0;
+j = 0;
 while (haystack[i])
 {
 	while (needle[j])
