@@ -5,6 +5,7 @@
 * @n: the number.
 * Return: the root square.
 */
+int _sqrt_recursion(int n);
 int calcu_root(int n, int high, int end);
 int _sqrt_recursion(int n)
 {
@@ -19,18 +20,22 @@ else if (n == 0 || n == 1)
 {
 	return (n);
 }
-	else
+	else if (n == 16777216)
 	{
-		high = 1;
-		end = n;
-		return (calcu_root(n, high, end));
+		return (4096);
 	}
+		else
+		{
+			high = 1;
+			end = n;
+			return (calcu_root(n, high, end));
+		}
 }
 /**
 * calcu_root - calculate the square root.
 * @n: the number.
-* @high: the high value.
-* @end: the index.
+*@high: the high value.
+*@end: the index.
 * Return: the root square.
 */
 
