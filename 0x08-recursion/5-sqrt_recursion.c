@@ -5,7 +5,7 @@
 * @n: the number.
 * Return: the root square.
 */
-
+int calcu_root(int n, int high, int end);
 int _sqrt_recursion(int n)
 {
 int high;
