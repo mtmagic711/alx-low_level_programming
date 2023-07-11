@@ -23,8 +23,21 @@ else
 	for (i = 0; i < height; i++)
 	{
 		array[i] = (int *)malloc(sizeof(int) * width);
-		for (j = 0; j < width; j++)
-			array[i][j] = 0;
+		if (array[i] != NULL)
+		{
+			for (j = 0; j < width; j++)
+				array[i][j] = 0;
+		}
+		else
+			{
+				while (i >= 0)
+				{
+					free(array[i]);
+					i--;
+				}
+				free(array);
+				return (NULL);
+			}
 	}
 }
 return (array);
