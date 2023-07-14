@@ -16,12 +16,14 @@ int i = 0;
 
 if (min > max)
 	return (NULL);
+ln = max - min + 1;
 array = malloc(ln * sizeof(int));
 if (array == NULL)
 	return (NULL);
 while (array[i] < ln)
 {
 	array[i] = (min + i);
+	i++;
 }
 return (array);
 }
