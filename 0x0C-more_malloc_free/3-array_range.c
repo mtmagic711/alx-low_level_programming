@@ -22,7 +22,7 @@ if (array == NULL)
 	return (NULL);
 while (array[i] < ln)
 {
-	array[i] = (min + i);
+	array[i] = min++;
 	i++;
 }
 return (array);
