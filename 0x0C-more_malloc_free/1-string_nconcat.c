@@ -11,8 +11,9 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 int cmp1 = 0;
-int cmp2 = 0;
+unsigned int cmp2 = 0;
 int i = 0;
+unsigned int j;
 char *ptr;
 
 if (s1 == NULL)
@@ -20,7 +21,7 @@ if (s1 == NULL)
 else
 {
 	while (s1[cmp1])
-		cmp++;
+		cmp1++;
 }
 if (s2 == NULL)
 	return (NULL);
