@@ -17,7 +17,7 @@ int i = 0;
 if (min > max)
 	return (NULL);
 total = max - min + 1;
-array = malloc(total * sizeof(int));
+array = malloc(total *sizeof(int));
 if (array == NULL)
 	return (NULL);
 while (min <= max)
