@@ -20,10 +20,7 @@ total = max - min + 1;
 array = malloc(total * sizeof(int));
 if (array == NULL)
 	return (NULL);
-while (array[i] <= total)
-{
+for (i = 0; i <= total; i++)
 	array[i] = min++;
-	i++;
-}
 return (array);
 }
