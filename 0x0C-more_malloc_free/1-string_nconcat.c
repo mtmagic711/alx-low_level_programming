@@ -5,6 +5,7 @@
 * string_nconcat - concatenates two strings.
 * @s1: string 1.
 * @s2: string 2.
+* @n: number of char from s2.
 * Return: a fuul string.
 */
 
@@ -30,7 +31,7 @@ else
 	while (s2[cmp2])
 		cmp2++;
 	if (cmp2 > n)
-			cmp2 = n;
+		cmp2 = n;
 }
 ptr = malloc(sizeof(char) * (cmp1 + cmp2 + 1));
 if (ptr == NULL)
