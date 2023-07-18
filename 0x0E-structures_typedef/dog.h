@@ -9,7 +9,6 @@
 * Descripition: info about a dog.
 */
 
-typedef struct dog
 struct dog
 {
 	char *name;
