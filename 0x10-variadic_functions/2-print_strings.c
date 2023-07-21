@@ -17,11 +17,11 @@ va_start(ap, n);
 
 for (i = 0; i < n; i++)
 {
-	str = va_arg(ap, char*);
-	printf("%s", str ? str : "(nil)");
+	string = va_arg(ap, char*);
+	printf("%s", string ? string : "(nil)");
 	if (i < n - 1)
 		printf("%s", separator ? separator : "");
 }
 va_end(ap);
-	printf("\n");
+printf("\n");
 }
