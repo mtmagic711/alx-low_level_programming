@@ -41,5 +41,5 @@ while (format && format[i] != '\0')
 	i++;
 }
 printf("\n");
-va_end(list);
+va_end(a_list);
 }
