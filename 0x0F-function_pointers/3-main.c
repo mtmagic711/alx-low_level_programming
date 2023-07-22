@@ -1,12 +1,14 @@
 #include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - program that perfroms simple operations
- * @ac: number of arguments.
- * @av: array of arguments.
+ * @argc: number of arguments.
+ * @argv: array of arguments.
  * Return: Always 0.
  */
-int main(int ac, char *av[])
+int main(int argc, char *argv[])
 {
 if (argc == 4)
 {
