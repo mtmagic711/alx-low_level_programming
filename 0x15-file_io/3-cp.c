@@ -60,9 +60,9 @@ int main(int argc, char *argv[])
 		free(buffer);
 		exit(99);
 	}
+	free(buffer);
 	close_descr(fd);
 	close_descr(fd2);
-	free(buffer);
 
 	return (0);
 }
