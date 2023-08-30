@@ -42,7 +42,7 @@ int calcu_root(int n, int high, int end)
 		return (-1);
 
 	mid = high + (end - high) / 2;
-	square = mid *mid;
+	square = mid * mid;
 
 	if (square == n)
 		return (mid);
