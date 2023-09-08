@@ -12,6 +12,6 @@ void *malloc_checked(unsigned int b)
 
 	bite = malloc(b);
 	if (bite == NULL)
-		exit (98);
+		exit(98);
 	return (bite);
 }
