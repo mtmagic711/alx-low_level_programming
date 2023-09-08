@@ -32,12 +32,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		array[j] = s1[j];
 
 	i = 0;
-	while (i <= n)
+	while (i < n)
 	{
 		array[j] = s2[i];
 		i++;
 		j++;
 	}
-	array[j] = '\0';
 	return (array);
 }
