@@ -6,7 +6,7 @@
 * @argv: an array of strings.
 * Return: Always 0.
 */
-if (argc == 4)
+
 int main(int argc, char *argv[])
 {
 	int a, b;
@@ -22,9 +22,8 @@ int main(int argc, char *argv[])
 	
 		printf("Error\n");
 		exit(100);
+		}
 	}
-}
 	printf("%d\n", f(a, b));
-	
 	return (0);
 }
