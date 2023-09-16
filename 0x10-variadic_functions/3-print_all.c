@@ -20,13 +20,15 @@ void print_all(const char * const format, ...)
 
 	va_start(ptr, format);
 	str = format;
+	if (format == NULL)
+		printf("\n");
 	while (*(str + i) != '\0')
 	{
 		if (i != 0 && (*(str + i) == 'c' || *(str + i) == 'i'
 		|| *(str + i) == 'f' || *(str + i) == 's'))
 			printf(", ");
 
-		switch(str[i])
+		switch (str[i])
 		{
 			case 'c':
 				charac = va_arg(ptr, int);
@@ -52,12 +54,3 @@ void print_all(const char * const format, ...)
 	va_end(ptr);
 	printf("\n");
 }
-
-
-
-
-
-
-/*if (i != 0 && (*(str + i) == 'c' || *(str + i) == 'i'
-		|| *(str + i) == 'f' || *(str + i) == 's'))
-			printf(", "); */
