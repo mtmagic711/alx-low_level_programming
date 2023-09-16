@@ -24,28 +24,39 @@ void print_all(const char * const format, ...)
 		if (i != 0 && (*(str + i) == 'c' || *(str + i) == 'i'
 		|| *(str + i) == 'f' || *(str + i) == 's'))
 			printf(", ");
-		if (*(str + i) == 'c')
+
+		switch(str[i])
 		{
-			charac = va_arg(ptr, int);
-			printf("%c", charac);
-		}
-		else if (*(str + i) == 'i')
-		{
-			i_val = va_arg(ptr, int);
-			printf("%d", i_val);
-		}
-			else if (*(str + i) == 'f')
-			{
+			case 'c':
+				charac = va_arg(ptr, int);
+				printf("%c", charac);
+				break;
+			case 'i':
+				i_val = va_arg(ptr, int);
+				printf("%d", i_val);
+				break;
+			case 'f':
 				f_val = va_arg(ptr, double);
 				printf("%f", f_val);
-			}
-				else if (*(str + i) == 's')
-				{
-					string = va_arg(ptr, char *);
-					printf("%s", string ? string : "(nil)");
-				}
+				break;
+			case 's':
+				string = va_arg(ptr, char *);
+				printf("%s", string ? string : "(nil)");
+				break;
+			default:
+				break;
+		}
 		i++;
 	}
 	va_end(ptr);
 	printf("\n");
 }
+
+
+
+
+
+
+/*if (i != 0 && (*(str + i) == 'c' || *(str + i) == 'i'
+		|| *(str + i) == 'f' || *(str + i) == 's'))
+			printf(", "); */
