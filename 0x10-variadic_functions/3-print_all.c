@@ -13,13 +13,12 @@ void print_all(const char * const format, ...)
 {
 	va_list ptr;
 	char *string;
-	const char *str;
+	const char *str = format;
 	int i = 0, i_val;
 	float f_val;
 	char charac;
 
 	va_start(ptr, format);
-	str = format;
 	if (format == NULL)
 		printf("\n");
 	while (*(str + i) != '\0')
@@ -27,7 +26,6 @@ void print_all(const char * const format, ...)
 		if (i != 0 && (*(str + i) == 'c' || *(str + i) == 'i'
 		|| *(str + i) == 'f' || *(str + i) == 's'))
 			printf(", ");
-
 		switch (str[i])
 		{
 			case 'c':
